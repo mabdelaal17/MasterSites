@@ -238,7 +238,7 @@ a {
 }
 /* Start Sites Section */
 .sites-section {
-  margin: 100px 0 100px;
+  margin: 100px 0 250px;
 }
 
 .sites-section .container .section-grid {
@@ -546,13 +546,18 @@ a {
   .sites-section .container {
     width: 375px;
   }
-  .section-header h2 {
-    text-align: center;
-    margin-bottom: 50px;
+  .section-header {
+    justify-content: center;
+  }
+  .section-header h2 a {
+    font-size: 25px;
+  }
+  .section-header i {
+    font-size: 20px;
   }
   .sites-section .container .section-grid .sites-grid {
     grid-template-columns: repeat(1, 350px);
-    grid-template-rows: repeat(3, 175px);
+    grid-template-rows: repeat(6, 175px);
     grid-gap: 60px 0;
   }
 }

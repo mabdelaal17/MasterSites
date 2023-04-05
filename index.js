@@ -12,13 +12,6 @@ if (visitCount) {
 }
 counterContainer.innerHTML = visitCount;
 
-// Adding onClick event listener
-resetButton.addEventListener("click", () => {
-  visitCount = 1;
-  localStorage.setItem("page_view", 1);
-  counterContainer.innerHTML = visitCount;
-});
-
 // Main Sections Counter
 var clas = document.getElementsByClassName("section-header");
 console.log(clas.length);
@@ -32,7 +25,7 @@ document.getElementsByClassName("secondary-section-counter");
 document.getElementById("secondary-section-counter").innerHTML = clas.length;
 
 // Sites Counter
-var clas = document.getElementsByClassName("site-container");
-console.log(clas.length);
-document.getElementsByClassName("site-counter");
-document.getElementById("site-counter").innerHTML = clas.length;
+// var clas = document.getElementsByClassName("site-container");
+// console.log(clas.length);
+// document.getElementsByClassName("site-counter");
+// document.getElementById("site-counter").innerHTML = clas.length;
