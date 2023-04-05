@@ -19,17 +19,20 @@ resetButton.addEventListener("click", () => {
   counterContainer.innerHTML = visitCount;
 });
 
-// Get all elements with class name "section-header"
-var elements = document.getElementsByClassName("section-header");
+// Main Sections Counter
+var clas = document.getElementsByClassName("section-header");
+console.log(clas.length);
+document.getElementsByClassName("section-header-counter");
+document.getElementById("section-header-counter").innerHTML = clas.length;
 
-// Get the count of elements
-var count = elements.length;
+// Secondary Section Counter
+var clas = document.getElementsByClassName("secondary-section-header");
+console.log(clas.length);
+document.getElementsByClassName("secondary-section-counter");
+document.getElementById("secondary-section-counter").innerHTML = clas.length;
 
-// Get the existing section header element with class name "section-header"
-var sectionHeader = document.querySelector(".section-header");
-
-// Get the existing p element with class name "secondary-sections-counter"
-var counter = sectionHeader.querySelector(".secondary-sections-counter");
-
-// Update the text content of the p element with the count of elements
-counter.textContent = count;
+// Sites Counter
+var clas = document.getElementsByClassName("site-container");
+console.log(clas.length);
+document.getElementsByClassName("site-counter");
+document.getElementById("site-counter").innerHTML = clas.length;
