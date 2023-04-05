@@ -686,6 +686,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
   transform: scale(0);
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
