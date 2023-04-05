@@ -541,6 +541,7 @@ a {
   -o-transition: var(--main-transition);
   width: 100%;
   position: relative;
+  z-index: 0;
 }
 
 .programming-lines .container .section-grid .sites-grid .site-container h3 {
@@ -569,6 +570,7 @@ a {
   -moz-border-radius: 15px 15px 0 0;
   -ms-border-radius: 15px 15px 0 0;
   -o-border-radius: 15px 15px 0 0;
+  z-index: 2;
 }
 
 .programming-lines .container .section-grid .sites-grid h3 a {
@@ -645,6 +647,7 @@ a {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .programming-lines
