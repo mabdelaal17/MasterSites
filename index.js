@@ -24,7 +24,6 @@ console.log(clas.length);
 document.getElementsByClassName("secondary-section-counter");
 document.getElementById("secondary-section-counter").innerHTML = clas.length;
 
-// Sites Counter
 // var clas = document.getElementsByClassName("site-container");
 // console.log(clas.length);
 // document.getElementsByClassName("site-counter");
