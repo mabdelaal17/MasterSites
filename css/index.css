@@ -318,7 +318,7 @@ a {
 @media (max-width: 991px) {
   .landing {
     padding: 50px 0 50px;
-    height: 29vh;
+    height: 30vh;
   }
   .landing .container {
     width: 750px;
@@ -329,7 +329,7 @@ a {
   }
   .statistics {
     position: absolute;
-    top: 315px;
+    top: 35vh;
     width: 650px;
   }
   .statistics .container {
@@ -343,6 +343,7 @@ a {
     height: 70vh;
   }
   .landing .container {
+    top: 70vh;
     width: 375px;
     margin-top: 50px;
   }
