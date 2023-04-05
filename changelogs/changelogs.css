@@ -213,14 +213,6 @@ a {
   .landing img {
     width: 100px;
   }
-  .statistics {
-    position: absolute;
-    top: 315px;
-    width: 650px;
-  }
-  .statistics .container {
-    width: 650px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -233,7 +225,7 @@ a {
     width: 40px;
   }
 }
-/* End Statistics */
+/* End Landing */
 /* Start News */
 .news {
   margin: 50px 0 50px 0;
