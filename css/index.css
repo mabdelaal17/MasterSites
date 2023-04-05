@@ -469,7 +469,7 @@ a {
 .section-header h2 {
   font-size: 40px;
   color: #d0d0d0;
-  margin: 0 -0x 25px 0;
+  margin: 50px 0 0 0;
 }
 
 .secondary-section-header {
@@ -814,3 +814,138 @@ a {
   }
 }
 /* End Programming Lines */
+/* Start Footer */
+
+.footer {
+  padding: 100px 50px;
+  background-color: var(--main-color);
+  position: relative;
+  overflow: hidden;
+  border-top: solid 1px var(--primary-bg);
+  z-index: 0;
+}
+
+.footer::before {
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1005%26quot%3b)' fill='none'%3e%3cpath d='M-154.83 310.03C-21.17 308.79 153.1 164.51 361.16 170.03 569.23 175.55 507.46 552.3 619.16 616.77' stroke='rgba(100%2c 149%2c 237%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M-148.85 457.79C13.48 457.06 165.58 322.94 486.39 323.39 807.21 323.84 944.58 629.93 1121.64 638.42' stroke='rgba(100%2c 149%2c 237%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M-208.97 286.53C-34.27 291.49 104.96 547.31 438.66 549.73 772.37 552.15 923.71 609.12 1086.3 609.18' stroke='rgba(100%2c 149%2c 237%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M-75.05 494.22C103.66 490.63 343.96 253.21 598.17 253.42 852.38 253.63 815.7 581.76 934.78 613.39' stroke='rgba(100%2c 149%2c 237%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M-120.96 152.4C-23.25 154.49 33.89 271.29 246.12 286.8 458.35 302.31 496.59 565.44 613.2 583.15' stroke='rgba(100%2c 149%2c 237%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1005'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.footer .footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer .footer-grid .box img {
+  width: 100px;
+}
+
+.footer .footer-grid .box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer .footer-grid .box:first-child {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.box-flex ul {
+  display: flex;
+  margin-top: 25px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.box-flex ul li {
+  margin-bottom: 25px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.box-flex ul li a {
+  color: var(--primary-bg);
+  background-color: var(--second-bg);
+  padding: 2px 5px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.box-flex ul li a:hover {
+  color: var(--main-color);
+  background-color: var(--primary-color);
+}
+
+.footer .footer-grid .box h3 {
+  font-size: 25px;
+  margin-top: 7px;
+  font-weight: 600;
+}
+
+.footer .footer-grid .box span {
+  font-size: 18px;
+  margin-top: 5px;
+  opacity: 0.7;
+}
+
+.footer .social-media-icons {
+  display: flex;
+  margin-top: 15px;
+}
+
+.footer .social-media-icons a {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+}
+
+.footer .social-media-icons a:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+.footer .social-media-icons a i {
+  font-size: 25px;
+}
+
+.footer .social-media-icons a:first-child i {
+  color: #4267b2;
+}
+
+.footer .social-media-icons a:nth-child(2) i {
+  color: #ff0000;
+}
+
+.footer .social-media-icons a:nth-child(3) i {
+  color: #171515;
+}
+
+.footer .social-media-icons a:last-child i {
+  color: #7289da;
+}
+
+.footer .social-media-icons a:not(:first-child) {
+  margin-right: 10px;
+}
+/* End Footer */
