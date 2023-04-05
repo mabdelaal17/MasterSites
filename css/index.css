@@ -450,7 +450,7 @@ a {
 .programming-lines .container .section-grid .sites-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, 175px);
+  grid-template-rows: repeat(1, 200px);
   grid-gap: 50px;
   justify-items: center;
 }
@@ -522,6 +522,11 @@ a {
 .section-header h2 {
   font-size: 40px;
   color: #d0d0d0;
+  margin-bottom: 25px;
+}
+
+.section-header:not(:first-child) h2 {
+  margin-top: 50px;
 }
 
 .secondary-section-header {
@@ -557,21 +562,6 @@ a {
   -o-transition: var(--main-transition);
 }
 
-.programming-lines .container .section-grid .sites-grid .sites-container {
-  box-shadow: 1px 1px 25px rgb(0, 0, 0, 0.01), -1px -1px 25px rgb(0, 0, 0, 0.01);
-  border-radius: 18px;
-  -webkit-border-radius: 18px;
-  -moz-border-radius: 18px;
-  -ms-border-radius: 18px;
-  -o-border-radius: 18px;
-  transition: var(--main-transition);
-  -webkit-transition: var(--main-transition);
-  -moz-transition: var(--main-transition);
-  -ms-transition: var(--main-transition);
-  -o-transition: var(--main-transition);
-  position: relative;
-}
-
 .programming-lines .container .section-grid .sites-grid .sites-container:hover {
   box-shadow: 1px 1px 25px rgb(0, 0, 0, 0.03), -1px -1px 25px rgb(0, 0, 0, 0.03);
 }
@@ -593,7 +583,19 @@ a {
   -moz-transition: var(--main-transition);
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
-  padding: 25px;
+  padding: 25px 5px;
+  box-shadow: 1px 1px 25px rgb(0, 0, 0, 0.01), -1px -1px 25px rgb(0, 0, 0, 0.01);
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  position: relative;
 }
 
 .programming-lines
@@ -682,9 +684,9 @@ a {
 
 .programming-lines .container .section-grid .sites-grid .site-details {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   transform: scale(0);
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
@@ -708,6 +710,34 @@ a {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
+}
+
+.programming-lines
+  .container
+  .section-grid
+  .sites-grid
+  .site-container
+  .site-details
+  span {
+  background-color: var(--second-bg);
+  padding: 5px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+
+.programming-lines
+  .container
+  .section-grid
+  .sites-grid
+  .site-container
+  .site-details
+  span {
+  margin-right: 10px;
 }
 
 .programming-lines .container .section-grid .sites-grid .site-container h3 {
@@ -813,10 +843,11 @@ a {
   }
   .section-header h2 {
     text-align: center;
+    margin-bottom: 50px;
   }
   .secondary-section-header {
     width: 350px;
-    margin: 50px 0 25px;
+    margin: 0 25px;
   }
   .programming-lines .container .section-grid .sites-grid {
     grid-template-columns: repeat(1, 350px);
