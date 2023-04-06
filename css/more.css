@@ -154,13 +154,6 @@ a {
   animation: appear 0.3s 1s;
   -webkit-animation: appear 0.3s 1s;
   animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-@keyframes appear {
-  to {
-    opacity: 1;
-  }
 }
 
 .landing {
