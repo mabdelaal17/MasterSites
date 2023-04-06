@@ -28,3 +28,16 @@ document.getElementById("secondary-section-counter").innerHTML = clas.length;
 // console.log(clas.length);
 // document.getElementsByClassName("site-counter");
 // document.getElementById("site-counter").innerHTML = clas.length;
+
+const urls = ["./index.html", "./programming/icons-more/icons-more.html"];
+var nbOccurences = 0;
+for (let n = 0; n < urls.length - 1; n++) {
+  fetch(urls[n], { cache: "no-store" }).then((response) => {
+    response.text().then((data) => {
+      // (data) is the whole source-code inside your html
+      var clas = document.getElementsByClassName("site-container");
+      nbOccurences += data.split(test).length - 1;
+    });
+  });
+}
+document.querySelector("#site-counter").innerText = nbOccurences;
