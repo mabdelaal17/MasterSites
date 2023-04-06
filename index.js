@@ -30,6 +30,7 @@ const urls = [
   "./everyone/inspiration/inspiration.html",
   "./everyone/photos-more/photos-more.html",
   "./design/png-more/png-more.html",
+  "./everyone/helper-sites/helper-sites.html",
 ];
 var nbOccurences = 0;
 
@@ -44,7 +45,7 @@ for (let n = 0; n < urls.length; n++) {
       })
       .then((data) => {
         console.log("nb Occurences : ", nbOccurences);
-        document.querySelector("h2#site-counter").innerText = nbOccurences - 12;
+        document.querySelector("h2#site-counter").innerText = nbOccurences - 15;
       });
   });
 }
