@@ -24,27 +24,29 @@ console.log(clas.length);
 document.getElementsByClassName("secondary-section-counter");
 document.getElementById("secondary-section-counter").innerHTML = clas.length;
 
+// Counting sites
 const urls = [
-  "./index.html",
-  "./everyone/icons-more/icons-more.html",
-  "./everyone/inspiration/inspiration.html",
-  "./everyone/photos-more/photos-more.html",
-  "./design/png-more/png-more.html",
-  "./everyone/helper-sites/helper-sites.html",
+  "/index.html",
+  "/design/png-more/png-more.html",
+  "/everyone/helper-sites/helper-sites.html",
+  "/everyone/icons-more/icons-more.html",
+  "/everyone/inspiration/inspiration.html",
+  "/everyone/photos-more/photos-more.html",
 ];
-var nbOccurences = 0;
-for (let n = 0; n < urls.length; n++) {
-  fetch(urls[n], { cache: "no-store" }).then((response) => {
-    response
-      .text()
-      .then((data) => {
-        nbOccurences += Number(
-          (data.match(new RegExp("site-container", "g")) || []).length
-        );
-      })
-      .then((data) => {
-        console.log("nb Occurences : ", nbOccurences);
-        document.querySelector("h2#site-counter").innerText = nbOccurences - 15;
-      });
-  });
-}
+const class_names = ["count"];
+let counter = 0;
+
+(async () => {
+  for (const url of urls) {
+    const response = await fetch(url);
+    const data = await response.text();
+    const parser = new DOMParser();
+    const html = parser.parseFromString(data, "text/html");
+    const elements = html.querySelectorAll(
+      class_names.map((className) => `.${className}`).join(",")
+    );
+    counter += elements.length;
+  }
+
+  document.querySelector("h2#site-counter").innerText = counter;
+})();
