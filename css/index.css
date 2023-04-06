@@ -245,7 +245,6 @@ a {
 .statistics .container {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-template-rows: repeat(1, auto);
   width: 850px;
 }
 
