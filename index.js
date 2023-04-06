@@ -26,12 +26,12 @@ document.getElementById("secondary-section-counter").innerHTML = clas.length;
 
 // Counting sites
 const urls = [
-  "./index.html",
-  "./design/png-more/png-more.html",
-  "./everyone/helper-sites/helper-sites.html",
-  "./everyone/icons-more/icons-more.html",
-  "./everyone/inspiration/inspiration.html",
-  "./everyone/photos-more/photos-more.html",
+  "index.html",
+  "design/png-more/png-more.html",
+  "everyone/helper-sites/helper-sites.html",
+  "everyone/icons-more/icons-more.html",
+  "everyone/inspiration/inspiration.html",
+  "everyone/photos-more/photos-more.html",
 ];
 const class_names = ["count"];
 let counter = 0;
