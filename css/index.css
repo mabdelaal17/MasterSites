@@ -452,6 +452,25 @@ a {
     left: 153%;
   }
 }
+
+@media (max-width: 767px) {
+  .upper-section {
+    margin-top: 250px;
+  }
+  .upper-section .container {
+    width: 375px;
+  }
+  .upper-section .container .badges {
+    width: 350px;
+  }
+  .upper-section .container .badges img {
+    width: 40px;
+  }
+  .upper-section .container .notes {
+    width: 350px;
+  }
+}
+
 /* End Badges */
 /* Start Programming Lines */
 .sites-section {
@@ -544,7 +563,7 @@ a {
 .section-header h2 {
   font-size: 50px;
   color: #d0d0d0;
-  margin: 125px 0 0 0;
+  margin: 50px 0 0 0;
 }
 
 .secondary-section-header {
