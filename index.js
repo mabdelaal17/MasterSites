@@ -33,7 +33,6 @@ const urls = [
   "./everyone/helper-sites/helper-sites.html",
 ];
 var nbOccurences = 0;
-
 for (let n = 0; n < urls.length; n++) {
   fetch(urls[n], { cache: "no-store" }).then((response) => {
     response
