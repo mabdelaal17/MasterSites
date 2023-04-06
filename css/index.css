@@ -396,7 +396,7 @@ a {
 
 .sites-section .container .section-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(1, auto);
   grid-gap: 25px;
   justify-items: center;
 }
@@ -409,8 +409,8 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 200px);
-  grid-gap: 50px;
   justify-items: center;
+  grid-gap: 50px;
 }
 
 .secondary-section-header {
@@ -749,7 +749,7 @@ a {
 .site-tag .tag-container {
   position: absolute;
   z-index: 50;
-  top: calc(100% + 30px);
+  top: calc(100% + 35px);
   left: calc(50% + 25px);
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
