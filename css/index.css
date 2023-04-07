@@ -634,7 +634,6 @@ a {
   font-size: 20px;
   color: var(--primary-bg);
   background-color: var(--second-bg);
-  padding: 5px 7px;
   border-radius: 15px 15px 0 0;
   margin-top: 7px;
   font-weight: 400;
@@ -661,6 +660,11 @@ a {
   -moz-transition: var(--main-transition) 0.1s;
   -ms-transition: var(--main-transition) 0.1s;
   -o-transition: var(--main-transition) 0.1s;
+  padding: 5px 7px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sites-section .container .section-grid .sites-grid .site-container:hover h3 {
