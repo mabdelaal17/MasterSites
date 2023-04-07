@@ -18,6 +18,7 @@ const urls = [
   "everyone/icons-more/icons-more.html",
   "everyone/inspiration/inspiration.html",
   "everyone/photos-more/photos-more.html",
+  "programming/prog-hosting/prog-hosting.html",
 ];
 const class_names = ["count"];
 let counter = 0;
@@ -92,3 +93,7 @@ function readableBytes(bytes) {
 
   return (bytes / Math.pow(1024, i)).toFixed(2) + " " + sizes[i];
 }
+
+// Share buttons
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
