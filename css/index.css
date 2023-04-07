@@ -394,7 +394,7 @@ a {
   margin-top: 25px;
   background-color: var(--main-color);
   position: relative;
-  width: 550px;
+  width: 500px;
   height: 40px;
   border-radius: 7px;
   -webkit-border-radius: 7px;
@@ -417,7 +417,7 @@ a {
   animation: news-bar 8s linear infinite;
   -webkit-animation: news-bar 8s linear infinite;
   animation-fill-mode: forwards;
-  width: 625px;
+  width: 650px;
 }
 
 .upper-section .container .notes p i {
