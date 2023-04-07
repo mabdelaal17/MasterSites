@@ -945,7 +945,7 @@ a {
   .sites-section .container .section-grid .sites-grid {
     grid-template-columns: repeat(1, 350px);
     grid-template-rows: repeat(3, 175px);
-    grid-gap: 60px 0;
+    grid-gap: 85px 0;
   }
   .secondary-section-header h2 {
     margin: 0 15px 0 0;
