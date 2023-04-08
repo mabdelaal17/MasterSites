@@ -244,7 +244,7 @@ a {
 .sites-section .container .section-grid .sites-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 200px);
+  grid-template-rows: repeat(3, 200px);
   grid-gap: 50px;
   justify-items: center;
 }
