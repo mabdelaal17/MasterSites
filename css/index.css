@@ -96,6 +96,10 @@ a {
   -o-border-radius: 10px;
 }
 /* End Global Rules */
+/* Visitors Counter */
+.counter {
+  display: none;
+}
 /* Start Loading */
 .loading {
   background-color: var(--main-color);
